@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Karla", sans-serif;
+}
+header {
+  background-color: pink;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
+  padding: 20px;
+  font-size: 25px;
+}
+ul {
+  list-style: none;
+}
+.nav-item,
+.nav-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-item {
+  background-color: orange;
+  justify-content: center;
+}
+.nav-group {
+  background-color: purple;
+}
+.banner {
+  width: 100%;
+}
+.banner-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.primary-section {
+  display: flex;
+}
+.secondary-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.img-section-1 {
+  height: 200px;
+  width: 30%;
+  background-color: orange;
+}
+footer {
+  display: flex;
+}
+.footer-section-1,
+.footer-section-2 {
+  width: 50%;
+  height: 200px;
+}
+.footer-section-1 {
+  background-color: red;
+  padding: 20px;
+}
+.footer-section-2 {
+  background-color: indigo;
+}
+.img-group {
+  display: flex;
+}
+.img-item {
+  height: 80px;
+  width: 25%;
+  border: 1px solid black;
+}
+@media screen and (max-width: 480px) {
+  nav {
+    width: 100%;
+  }
+  .nav-group {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    right: -100px;
+    /* margin-left: 313px; */
+    position: relative;
+  }
+  .banner {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+    background-color: white;
+    border: 1px rgb(59, 59, 59) solid;
+  }
+  .primary-section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(155, 155, 255);
+  }
+
+  .secondary-section {
+    background-color: rgb(238, 167, 96);
+    padding: 15px;
+    height: 230px;
+  }
+  .img-section-1 {
+    width: 50%;
+    height: 100%;
+    border: 1px solid gray;
+    margin-right: 10px;
+    background-color: rgb(238, 167, 96);
+  }
+  footer {
+    background-color: rgb(155, 155, 255);
+    display: flex;
+    flex-direction: column-reverse;
+    height: 290px;
+    padding: 10px;
+  }
+  .footer-section-1,
+  .footer-section-2 {
+    background-color: rgb(155, 155, 255);
+  }
+  .footer-section-2 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-bottom: 1px solid gray;
+  }
+  .footer-section-1 {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+  }
+  address {
+    width: 74%;
+  }
+  .img-group {
+    display: flex;
+    width: 50%;
+    padding-top: 9px;
+  }
+  .img-item {
+    width: 15%;
+    height: 50px;
+  }
+}
